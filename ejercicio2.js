@@ -14,7 +14,7 @@ const miPromesa = new Promise((resolve, reject) => {
     }
 });
 
-// Usando la promesa
+// Usando la promesa y returnando el resultado
 miPromesa.then((mensaje) => {
     console.log(mensaje);
 }).catch((error) => {
