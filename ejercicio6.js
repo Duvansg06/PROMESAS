@@ -3,14 +3,10 @@
 Escribir una función asíncrona que devuelva un mensaje "Hola, Mundo" y consumirla con .then() o await.
 */
 
-const funcionAsincrona = async () => {
+async function saludar() {
     return "Hola, Mundo";
 }
 
-funcionAsincrona()
-    .then((mensaje) => {
-        console.log(mensaje);
-    })
-    .catch((error) => {
-        console.error("Error:", error);
-    });
+saludar().then((mensaje) => {
+    console.log(mensaje);
+});
